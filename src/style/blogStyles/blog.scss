@@ -1,0 +1,47 @@
+
+
+.blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    
+    &__post {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 60vw;
+        
+    }
+
+    h1 {
+        font-family: 'Varela Round', sans-serif;
+        color: #2d2baa;
+        padding: 8px;
+        background-color: #20a6ff;
+        border: 1px #2d2baa solid;
+        border-radius: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-left: 20px;
+    }
+
+    p {
+        font-family: 'Varela Round', sans-serif;
+        color: #2d2baa;
+        padding: 18px;
+        background-color: #f3f3f3;
+        border: 1px #2d2baa solid;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+        white-space: pre-wrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .blog-wrapper__post {
+        width: 85vw;
+    }
+}

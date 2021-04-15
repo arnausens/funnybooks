@@ -1,0 +1,44 @@
+.form-input {
+    display: grid;
+    justify-items: center;
+
+    &__label {
+        padding: 10px;
+        color: #2d2baa;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    &__input {
+        box-sizing: border-box;
+        height: 40px;
+        width: 230px;
+        border: 1px solid #5553de;
+        border-radius: 20px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        background-color: white !important;
+    }
+}
+.form-button {
+    display: grid;
+    justify-items: center;
+    margin-top: 20px;
+
+    &__button {
+        color: rgb(245, 245, 245);
+        height: 45px;
+        width: 160px;
+        border-radius: 20px;
+        background-color: #5553de;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+
+        :hover {
+            cursor: pointer;
+        }
+    }
+    
+}

@@ -1,0 +1,45 @@
+
+
+.dobleImagen-parrafo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+
+    &__textoybuttons {
+        justify-items: center;
+        align-items: center;
+    }
+    &__texto {
+        margin:20px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 24px;
+    }
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        
+    }
+    &__button {
+        background-color: #5553de;
+        padding: 15px;
+        border-radius: 15px;
+        outline: none;
+        color: white;
+    }
+
+    &__imagen {
+        object-fit: cover;
+        border: solid 2px black;
+        height: 600px;
+    }
+   
+}
+@media (max-width: 1200px) {
+    .dobleImagen-parrafo {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}

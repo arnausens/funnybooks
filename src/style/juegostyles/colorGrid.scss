@@ -1,0 +1,61 @@
+.color-grid {
+    width: 500px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+
+    &__grid{
+        display: grid;
+        grid-template-columns: 122px 122px 122px;
+        grid-template-rows: 122px 122px;
+        justify-content: center;
+    }
+    &__blue, &__red, &__yellow, &__white, &__green, &__purple {
+        height: 120px;
+        width: 120px;
+        border: 1px solid black;
+        border-radius: 10px;
+        
+    }
+    &__blue {
+        background-color: blue;
+    }
+    &__red {
+        background-color: red;
+    }
+    &__yellow {
+        background-color: yellow;
+    }
+    &__white {
+        background-color: white;
+    }
+    &__green {
+        background-color: green;
+    }
+    &__purple {
+        background-color: purple;
+    }
+
+    &__button-hidden {
+        visibility: hidden;
+        background-color: #5553de;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-family: 'Aladin', cursive;
+        width: 30%;
+    }
+
+    &__button-complete {
+        background-color: #5553de;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-family: 'Aladin', cursive;
+        width: 30%;
+    }
+}
