@@ -31,7 +31,6 @@ class LoginPage extends Component {
         AuthApi.logIn(user)
             .then(r => {
                 usersStore.loggedUser(user.username)
-                usersStore.loggedUser(user.email)
                 console.log(user, r)
                 swal("FUNNY BOOKS!",`Bienvenido ${user.username}`, "success");
                 this.props.history.push('/');

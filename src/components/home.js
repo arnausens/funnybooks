@@ -22,31 +22,6 @@ class Home extends Component {
     }
    
     componentDidMount() {
-        // const usuario = JSON.parse(localStorage.getItem('users'))
-        // this.setState({
-        //     user: usuario[0]
-        // })
-
-        // let tokentoserver = localStorage.getItem('user_uaeh_token');
-         
-        // axios.get('http://127.0.0.1:8000/rest-auth/user/',
-        //     {
-        //         headers: {
-        //         'Authorization' : 'Token' + tokentoserver,
-        //         'Content-Type': 'application/json',
-        //         'Accept' : 'application/json',
-                
-        //     }
-        // })
-        //     .then(r => {
-        //         console.log(r)
-        //         swal("FUNNY BOOKS!",'Bienvenido', "success");
-        //     }).catch(e => {
-        //         console.log(e)
-
-        //         console.log(tokentoserver)
-        //         swal('OOOOPS!','Server problem', "error");
-        // });
         AuthApi.checkIn()
         
         

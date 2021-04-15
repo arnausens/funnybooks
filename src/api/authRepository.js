@@ -81,7 +81,8 @@ const authRepository = () => {
 
             instance.post('logout/', {})  
             .then(r => {  
-                localStorage.removeItem(tokenName);  
+                localStorage.removeItem(tokenName);
+                localStorage.removeItem('users')  
                 resolve(r.data);  
             }).catch(e => {  
                 console.log(e);  
@@ -91,19 +92,18 @@ const authRepository = () => {
     };
     
     const checkIn = () => {  
-        let tokentoserver = localStorage.getItem('user_uaeh_token');
         return new Promise((resolve, reject) => {  
             const instance = axios.create({  
                 baseURL: baseUrl,  
                 headers: {  
                     'Content-Type': 'application/json',
                     'Accept' : 'application/json',
-                    "Authorization" : 'Token ' + tokentoserver
+                    "Authorization" : 'Token ' + getLocalToken()
                 } 
             });  
             instance.get('user/', {})  
             .then(r => {  
-                console.log(r) 
+                console.log(r, 'success') 
                 resolve(r.data);  
             }).catch(e => {  
                 console.log(e);  
