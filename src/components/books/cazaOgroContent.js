@@ -1,9 +1,8 @@
 import React, { Fragment, Component } from 'react';
-import { Link } from 'react-router-dom';
 import DobleImagenParrafo from '../booksComponents/dobleImagenParrafo';
 import ImagenParrafo from '../booksComponents/imagenParrafo';
 import ParrafoJuego from '../booksComponents/parrafoJuego';
-import Home from "../home";
+import history from '../../history';
 
 import TopPage from '../topComponent';
 
@@ -53,7 +52,7 @@ class CazaOgroContent extends Component {
         })
     }
     returnHome = () => {
-        window.location.href="/";
+        history.push('/');
     }
 
 

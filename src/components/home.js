@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { Component } from 'react';
 import AuthApi from '../api/authRepository';
 
@@ -21,10 +20,8 @@ class Home extends Component {
     
     }
    
-    componentDidMount() {
-        AuthApi.checkIn()
-        
-        
+    isLoggedIn = () => {
+        AuthApi.checkIn()  
     };
 
     render() {
@@ -32,9 +29,9 @@ class Home extends Component {
             <div className='app'>
                 <TopPage className='Home-page__title' title='Funny Books'/>
                 <div className='books-grid'>
-                    <TheMummy/>
-                    <ElCazador />
-                    <ElPrincipito/>
+                    <div><TheMummy /></div>
+                    <div onClick={this.isLoggedIn}><ElCazador /></div>
+                    <div><ElPrincipito/></div>
                 </div>
             </div>
         );

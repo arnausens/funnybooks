@@ -1,5 +1,8 @@
 import axios from 'axios';  
-  
+import history from "../history";
+import swal from 'sweetalert';
+
+
 const authRepository = () => {  
  let debug = true;  
   
@@ -14,40 +17,19 @@ const authRepository = () => {
     };  
 
     const logIn = user => {  
-        // Retornar una nueva promesa, la promesa es como un try catch  
-        // el constructor recibe una funcion (arrow function) 
-        // donde recibe resolve y reject  
         return new Promise((resolve, reject) => {  
-        // Creamos una instancia de axios, para poder  
-        // comunicarnos con el servidor // axios.create recibe un objeto en donde pasamos 
-        // baseURL y headers  
             const instance = axios.create({  
-                //baseURL es la url del endpoint  
                 baseURL: baseUrl,  
-                // headers es lo necesario para hacer la petición  
                 headers: {  
                     'Content-Type': 'application/json'  
                 }  
-            });  
-
-            // Ejecutamos un método http, el primer argumento es  
-            // la url (si queremos agregar algo más a la url) 
-            // el segundo es el objeto con la información 
-            // necesaria  
+            });   
             instance.post('login/', user)  
             .then(r => {  
-                // si es correcto  
-                // guardamos el resultado (el token de Django) 
-                // en la base de datos (Local Storage) 
-                // El primer argumento es el nombre con el que se va a guardar 
-                // El segundo es la información que se guardara 
-                // Siempre debe hacer una llamada a JSON.stringify  
-                localStorage.setItem(tokenName, JSON.stringify(r.data.key));
-                // si es correcto, mediante resolve, retornamos la Promise  
+                localStorage.setItem(tokenName, JSON.stringify(r.data.key)); 
                 resolve(r.data);
             }).catch(e => {  
-                console.log(e);  
-                // Si algo salio mal, mediante reject, retornamos la promise  
+                console.log(e);   
                 reject(e.response);  
             }); 
         }); 
@@ -81,8 +63,10 @@ const authRepository = () => {
 
             instance.post('logout/', {})  
             .then(r => {  
+                swal("HASTA PRONTO!!","", "success");
                 localStorage.removeItem(tokenName);
                 localStorage.removeItem('users')  
+                history.push('/')
                 resolve(r.data);  
             }).catch(e => {  
                 console.log(e);  
@@ -103,10 +87,11 @@ const authRepository = () => {
             });  
             instance.get('user/', {})  
             .then(r => {  
-                console.log(r, 'success') 
+                console.log(r,'success') 
                 resolve(r.data);  
             }).catch(e => {  
-                console.log(e);  
+                history.push('/')
+                swal('Ooops!', "Debes estar logueado.", "warning") 
                 reject(e.response);  
             }); 
         }); 

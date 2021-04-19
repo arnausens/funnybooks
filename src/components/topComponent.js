@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import AuthApi from '../api/authRepository';
+import { Link } from 'react-router-dom';
 
 class TopPage extends Component {
 
-    logOut = () => {
+    toLogOut = () => {
         AuthApi.logOut()
-            .then(r => {
-                alert('Hasta pronto!');
-                this.props.history.push('/');
-            }).catch(e => {
-                alert('Upss hubo un error');
-        });
+         
     }
 
     render() {
@@ -20,14 +16,14 @@ class TopPage extends Component {
             <div className={`${className} top-page`}>
                 <div className='top-page__loginLinks'>
 
-                    { localStorage.getItem("user_uaeh_token") === null ? 
-                    <a href="/login" className='top-page__login'>Entrar</a> : 
-                    <a href="/" onClick={this.logOut} className='top-page__login'>Salir</a>}
+                    { localStorage.getItem("user_uaeh_token") === null ?
+                    <Link to='/login'><div className='top-page__login'>Entrar</div></Link> : 
+                    <div onClick={this.toLogOut} className='top-page__login'>Salir</div>}
                     
                     
-                    <a href="/" className='top-page__home'>Inicio</a>
+                    <Link to ='/'><div className='top-page__home'>Inicio</div></Link>
 
-                    <a href="/blog" className='top-page__language'>Blog</a>
+                    <Link to='/blog'><div className='top-page__language'>Blog</div></Link>
 
                 </div>
                 <div className='top-page__title'>{title}</div>

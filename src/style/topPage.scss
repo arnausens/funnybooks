@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
 
-    &__login-links, a {
+    &__login-links {
         display: grid;
         height: 20px;
         
@@ -18,9 +18,9 @@
         letter-spacing: 2px;
     }
 
-    &__home, a
-    &__login, a
-    &__language, a {
+    &__home,
+    &__login,
+    &__language {
         font-size: 19px;
         font-weight: bolder;
         padding: 4px;

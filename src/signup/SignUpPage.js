@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {SignUpForm} from './SignUpForm';
 import AuthApi from '../api/authRepository';
 import TopPage from '../components/topComponent';
+import swal from 'sweetalert';
 
 class SignUpPage extends Component {
     constructor(props){
@@ -27,10 +28,10 @@ class SignUpPage extends Component {
         const user = Object.assign({},this.state.user);
         AuthApi.signUp(user)
         .then(r => {
-            alert('Usuario creado');
+            swal("Usuario creado!","Bienvenido!", "success");
             this.props.history.push('/');
         }).catch(e => {
-            alert('Algo salió mal');
+            swal("Algo salió mal",`La contraseña debe tener minimo 8 caracteres`, "error");
         });
 
     }
