@@ -1,10 +1,18 @@
+html {
+    cursor: url("../../static/assets/icons/icons8-cursor-35.png"), auto;
+}
 body {
     margin: 0;
     background-image: url("../../static/assets/fondoMulticolorTransparente.png");
+    background-image: url("../../static/assets/dave-hoefler-PEkfSAxeplg-unsplash\ \(1\).jpg");
+    // background-image: url("../../static/assets/alex-NA72e-F7dRc-unsplash.jpg");
+    // background-image: url("../../static/assets/luke-chesser-B_oL3jEt5L4-unsplash.jpg");
+    // background-image: url("../../static/assets/sharon-mccutcheon-SGI0i5sHCL8-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-decoration: none;
     
+
 }
 .book-content {
     padding-top: 100px;
@@ -14,7 +22,7 @@ body {
 }
 
 a:-webkit-any-link {
-    cursor: pointer;
+    cursor: url("../../static/assets/icons/icons8-cursor-de-mano-35.png"), auto;
     text-decoration: none;
 }
 

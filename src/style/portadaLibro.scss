@@ -2,7 +2,9 @@
     display: grid;
     grid-template-rows: 1/-1;
     grid-template-columns: 1/-1;
-
+    cursor: url("../../static/assets/icons/icons8-book-reading-50.png"), auto;
+    
+    border-radius: 20px;
     
     & > * {
         grid-row: 1/-1;
@@ -14,11 +16,13 @@
 .libro {
     perspective: 150rem;
     -moz-perspective: 150rem;
-
+   
+   
     &-delante,
     &-detras {
         backface-visibility: hidden;
         transition: all .5s ease;
+        
     }
 
     &-detras {
@@ -30,6 +34,7 @@
     }
     &:hover &-detras {
         transform: rotateY(0deg);
+
     }
 }
 
@@ -38,19 +43,23 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    
 
     text-decoration: none;
     &__image {
-        box-shadow: 0 0 17px 13px rgba(0,0,0, 0.4);
+        box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 
+        12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 3px 8px 32px 29px rgba(0,0,0,0);
         height: 320px;
         width: 220px;
+        object-fit: cover;
     }
     &__title {
-        color: #5553de;
+        color: #940088;
         font-size: 26px;
         font-family: 'Flavors', cursive;
         margin-top: 10px;
         margin-bottom: 20px;
+        text-shadow: 3px 3px 1px #47474779;
     }
 }
 
@@ -60,10 +69,13 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    box-shadow: 0 0 17px 13px rgba(0,0,0, 0.4);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF,
+     12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 3px 8px 32px 29px rgba(0,0,0,0);
+    color: black;
+   
 
 
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
     font-size: 20px;
     background-color: grey;
     

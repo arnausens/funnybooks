@@ -4,7 +4,7 @@ import PortadaLibro from '../portadaLibro';
 class TheMummy extends Component {
     render() {
         return(
-            <PortadaLibro image='http://via.placeholder.com/220x320' title='The Mummy' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut augue a ipsum dapibus faucibus. Vestibulum imperdiet lorem in neque fermentum fermentum. Aenean faucibus libero eget dignissim pellentesque. Maecenas sed.'/>
+            <PortadaLibro image='https://cdn.pixabay.com/photo/2019/06/22/07/53/egyptian-4291024_960_720.jpg' title='The Mummy' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum fermentum. Aenean faucibus libero eget dignissim pellentesque. Maecenas sed.'/>
         )
     }
 }

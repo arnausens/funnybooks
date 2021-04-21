@@ -1,20 +1,3 @@
-// .sign-wrapper {
-//     display: grid;
-//     justify-items: center;
-//     margin-top: 100px;
-//     margin-bottom: 200px;
-
-
-//     .sign-up {
-//         display: grid;
-//         padding: 80px;
-//         border:  5px solid #5553de;
-//         border-radius: 50px;
-//         background-color: #20a6ff;
-//     }
-// }
-
-
 .signup-wrapper {
 
     display: flex;
@@ -31,7 +14,7 @@
         padding: 30px;
         border:  5px solid #5553de;
         border-radius: 50px;
-        background-color: #20a6ff;
+        background-color: #5e97b2;
     
         &__form {
             display: grid;
@@ -65,7 +48,7 @@
             transition: 0.5s ease;
 
             &:hover {
-                cursor: pointer;
+                cursor: url("../../static/assets/icons/icons8-cursor-de-mano-35.png"), auto;
                 transform: scale(1.1);
             }
         }

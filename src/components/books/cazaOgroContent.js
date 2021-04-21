@@ -69,9 +69,7 @@ class CazaOgroContent extends Component {
                     image='https://cdn.pixabay.com/photo/2016/10/07/23/10/vintage-1722786_960_720.jpg' 
                     texto='Todos sabían que el pequeño faraón era caprichoso, engreído y malcriado. ¡Pero su último mandato había dejado a los egipcios con los ojos como platos! 
                         El pequeño faraón había ordenado construir una pirámide: la más grande y majestuosa que se hubiera visto jamás. Y quería que fuera negra como la noche: de obsidiana, un vidrio volcánico del que se creía que tenía poderes extraordinarios.
-                        Hasta ahí no había problema: el arquitecto real contaba con experimentados constructores egipcios y el Imperio tenía riquezas y recursos suficientes como para traer la exótica roca volcánica desde la lejana Anatolia…  ¡Lo realmente inaudito era que el pequeño faraón había pedido que construyeran la pirámide del revés!
-                        -¿Del revés? ¡Pero gran faraón, entonces no se va a sujetar!
-                        – Quiero un vértice tan fino como la cabeza de un alfiler y que la coloquéis bocabajo ¡Y quiero que esté terminada la próxima primavera! ¡Por Osiris!'
+                        Hasta ahí no había problema: el arquitecto real contaba con experimentados constructores egipcios y el Imperio tenía riquezas y recursos suficientes como para traer la exótica roca volcánica desde la lejana Anatolia…  ¡Lo realmente inaudito era que el pequeño faraón había pedido que construyeran la pirámide del revés!'
                     click={this.step2}
                     button={"Continuar"}
                     />
@@ -86,11 +84,11 @@ class CazaOgroContent extends Component {
                     <DobleImagenParrafo
                     className='ogro-step2' 
                     imageL='https://cdn.pixabay.com/photo/2016/10/07/23/14/vintage-1722799_960_720.jpg'
-                    buttonL='Ofrecerle 3 mujeres'
+                    buttonL='Opción A'
                     clickL={this.step3a}
                     texto='Lorem ipsum dolor sit amet consectetur adipiscing elit nunc, a volutpat bibendum aliquet vehicula libero fusce, nibh ullamcorper dignissim penatibus enim ultricies ornare. Placerat condimentum ultrices elementum ullamcorper lacinia senectus, massa habitant sodales nibh aptent. Sociis vivamus facilisis integer tristique sagittis accumsan nunc massa ad arcu, est quisque habitant libero at bibendum nec himenaeos.'
                     imageR='https://cdn.pixabay.com/photo/2016/10/07/23/20/vintage-1722824_960_720.jpg'
-                    buttonR='Cocinarle 3 cabras'
+                    buttonR='Opción B'
                     clickR={this.step3b}
                     />
                     </div>

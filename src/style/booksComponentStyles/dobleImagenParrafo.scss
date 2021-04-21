@@ -6,6 +6,7 @@
     justify-items: center;
     align-items: center;
     
+    
 
     &__textoybuttons {
         justify-items: center;
@@ -13,7 +14,7 @@
     }
     &__texto {
         margin:20px;
-        font-family: 'Varela Round', sans-serif;
+        font-family: 'Balsamiq Sans', cursive;
         font-size: 24px;
     }
     &__buttons {
@@ -28,6 +29,8 @@
         border-radius: 15px;
         outline: none;
         color: white;
+        cursor: url("../../static/assets/icons/icons8-cursor-de-mano-35.png"), auto;
+        font-family: 'Balsamiq Sans', cursive;
     }
 
     &__imagen {

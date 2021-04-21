@@ -9,9 +9,7 @@ const authRepository = () => {
     let baseUrl = 'http://localhost:8000/rest-auth';  
     let userUrl = 'http://localhost:8000/api/auth/me/';  
   
-    //Dar un nombre al token local  
     const tokenName = 'user_uaeh_token';  
-    // Obtener el usuario Determinar si está logeado o no  
     const getLocalToken = () => {  
         return JSON.parse(localStorage.getItem(tokenName));  
     };  
