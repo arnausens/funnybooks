@@ -5,7 +5,7 @@ import TopPage from '../components/topComponent';
 import swal from 'sweetalert';
 
 import { Link } from 'react-router-dom';
-import { inject, observer } from "mobx-react";
+import { inject } from "mobx-react";
 import usersStore from '../stores/UsersStore';
 
 class LoginPage extends Component {
@@ -42,11 +42,10 @@ class LoginPage extends Component {
     };
 
     render(){
-        const { UsersStore } = this.props;
         return (
             <div className="app">
 
-                <TopPage className='Home-page__title' title='Bienvenido!'/>
+                <TopPage className='Home-page__title' title='Welcome!'/>
                 <div className="login-wrapper">
                 <div className="loginform">
                     <LoginForm 

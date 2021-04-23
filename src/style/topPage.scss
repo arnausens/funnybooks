@@ -18,7 +18,7 @@
         font-family: 'Flavors', cursive;
         color: #d600c5;
         letter-spacing: 2px;
-        text-shadow: 6px 7px 2px #456e81;
+        text-shadow: 6px 7px 2px #ffe488;
         
     }
 
@@ -40,7 +40,7 @@
         &:hover {
             border-end-end-radius: 10px 100px;
             letter-spacing: 2px;
-            background-color: #5553de;
+            background-color: #d600c5;
             color: yellow;
         }
         
@@ -49,19 +49,19 @@
     }
 
     &__login {
-        border: 2px ridge #d600c5;
+        border: 2px ridge #ffe488;
         width: 100%;
         background-color: #5e97b2;
        
     }
     &__home {
-        border: 2px ridge #d600c5;
+        border: 2px ridge #ffe488;
         border-top: none;
         width: 80%;
         background-color: #74b9da;
     }
     &__language {
-        border: 2px ridge #d600c5;
+        border: 2px ridge #ffe488;
         border-top: none;
         width: 60%;
         background-color: #88d9ff;
