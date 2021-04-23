@@ -13,7 +13,7 @@ import "./style/main.scss";
 import Home from "./components/home";
 import CazaOgroContent from "./components/books/cazaOgroContent";
 import Blog from "./components/blog/blog";
-import SignUpPage from "./signup/signUpPage";
+import SignUpPage from "./signup/SignUpPage";
 import LoginPage from "./login/LoginPage";
 
 
