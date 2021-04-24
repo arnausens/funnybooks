@@ -6,8 +6,8 @@ import swal from 'sweetalert';
 const authRepository = () => {  
  let debug = true;  
   
-    let baseUrl = 'http://arnausens.pythonanywhere.com/rest-auth';  
-    let userUrl = 'http://arnausens.pythonanywhere.com/api/auth/me/';  
+    let baseUrl = 'https://arnausens.pythonanywhere.com/rest-auth';  
+    let userUrl = 'https://arnausens.pythonanywhere.com/api/auth/me/';  
 
     const tokenName = 'user_uaeh_token';  
     const getLocalToken = () => {  
