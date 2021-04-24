@@ -25,7 +25,6 @@ class Blog extends Component {
                 console.log(r)
             }).catch(e => {
                 swal('Ooops!', "Debes estar logueado.", "warning")
-                console.log(e)
                 history.push('/');
         });
 

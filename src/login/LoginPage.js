@@ -33,7 +33,6 @@ class LoginPage extends Component {
             .then(r => {
                 usersStore.loggedUser(user.username)
                 const usuario = this.state.user.username
-                console.log(user, r)
                 swal("FUNNY BOOKS!",`Bienvenido ${usuario}`, "success");
                 this.props.history.push('/');
             }).catch(e => {

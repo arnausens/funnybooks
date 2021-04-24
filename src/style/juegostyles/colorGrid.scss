@@ -5,12 +5,14 @@
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 20px;
+    box-sizing: content-box;
 
     &__grid{
         display: grid;
         grid-template-columns: 122px 122px 122px;
         grid-template-rows: 122px 122px;
         justify-content: center;
+        
     }
     &__blue, &__red, &__yellow, &__white, &__green, &__purple {
         height: 120px;
@@ -59,4 +61,16 @@
         width: 30%;
         cursor: url("../../static/assets/icons/icons8-cursor-de-mano-35.png"), auto;
     }
+}
+
+@media (max-width: 450px) {
+    .color-grid {
+
+        &__grid {
+            grid-template-columns: 122px 122px;
+            grid-template-rows: 122px 122px 122px;
+        }
+    }
+    
+   
 }

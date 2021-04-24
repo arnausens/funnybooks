@@ -23,8 +23,7 @@ const postRepository = () => {
             instance.post('',post)  
             .then(r => {   
                 resolve(r.data);  
-            }).catch(e => {  
-                console.log(e);  
+            }).catch(e => {   
                 reject(e.response);  
             });  
         }); 
@@ -43,8 +42,7 @@ const postRepository = () => {
             instance.get()  
             .then(r => {   
                 resolve(r.data);  
-            }).catch(e => {  
-                console.log(e);  
+            }).catch(e => {   
                 reject(e.response);  
             });  
         }); 
@@ -63,8 +61,7 @@ const postRepository = () => {
             instance.patch(post.id + '/', post)  
             .then(r => {   
                 resolve(r.data);  
-            }).catch(e => {  
-                console.log(e);  
+            }).catch(e => {   
                 reject(e.response);  
             });  
         }); 
@@ -84,8 +81,7 @@ const postRepository = () => {
             instance.delete(idPost + '/')  
             .then(r => {   
                 resolve(r.data);  
-            }).catch(e => {  
-                console.log(e);  
+            }).catch(e => {   
                 reject(e.response);  
             });  
         }); 

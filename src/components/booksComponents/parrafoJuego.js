@@ -7,7 +7,7 @@ class ParrafoJuego extends Component {
     return (
         <div className={`${className} parrafo-juego`}>
             <div className="parrafo-juego__parrafo">{texto}</div>
-            <ColorGrid click={click} buttonName={buttonName}/>  
+            <ColorGrid click={click} className={'juegoColorGrid'} buttonName={buttonName}/>  
         </div>
     );
   }

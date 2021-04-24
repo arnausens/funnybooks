@@ -44,5 +44,10 @@
     .dobleImagen-parrafo {
         grid-template-columns: 1fr;
         grid-gap: 20px;
+
+        &__imagen {
+            width: 90vw;
+        }
     }
+
 }
