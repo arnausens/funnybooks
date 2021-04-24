@@ -40,3 +40,12 @@
         font-family: 'Balsamiq Sans', cursive;
     }
 }
+
+@media (max-width: 1200px) {
+    .imagen-parrafo__imagen-texto {
+        width: 80vw;
+    }
+    .imagen-parrafo__imagen {
+        width: 90vw;
+    }
+}

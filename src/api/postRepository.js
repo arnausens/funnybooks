@@ -7,7 +7,7 @@ const getLocalToken = () => {
 };
 
 const postRepository = () => {  
-    let baseUrl = 'http://localhost:8000/api/posts';
+    let baseUrl = 'http://arnausens.pythonanywhere.com//api/posts';
  //CRUD METHODS
  //Create
     const newPost = (post) => {  
